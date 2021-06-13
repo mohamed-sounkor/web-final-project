@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Real Madrid Fans</title>
+        <link rel="icon" href="Real-Madrid-CF-Logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+            background-color: #3399ff;
+          }
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+div.gallery {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 60%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+@media screen and (min-width: 601px) and (max-width: 1200px){
+  div.gallery{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px){
+  div.gallery{
+    width: 92%;
+  }
+  li a{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 411px){
+  div.gallery{
+    width: 92%;
+  }
+  li a{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="IG.html">Image Gallery</a></li>
+            <li><a href="SI.html">Sign In</a></li>
+            <li><a href="SU.html">Sign Up</a></li>
+            <li style="float: right;"><a href="AU.html">About Us</a></li>
+        </ul>
+        <div class="gallery">
+          <a href="Benzo.html"><img src="KarimBenzema.jpg" alt="Karim Benzema" width="600" height="400"></a>
+          <div class="desc">Karim Benzema plays as a striker</div>
+        </div>
+        <div class="gallery">
+          <img src="LukaModric.jpg" alt="Luka Modric" width="600" height="400">
+          <div class="desc">Luka Modric plays as a midfielder</div>
+        </div>
+        <div class="gallery">
+          <img src="Curtoise.jpg" alt="Curtoise" width="600" height="400">
+          <div class="desc">Curtoise plays as a goal keeper</div>
+        </div>
+        <div class="gallery">
+          <img src="SergioRamos.jpg" alt="Sergio Ramos" width="600" height="400">
+          <div class="desc">Sergio Ramos plays as a defender and our first Captain</div>
+        </div>
+        <div class="gallery">
+          <img src="ToniKroos.jpg" alt="Toni Kroos" width="600" height="400">
+          <div class="desc">Toni Kroos plays as a midfielder</div>
+        </div>
+        <div class="gallery">
+          <img src="Marcelo.jpeg" alt="Marcelo" width="600" height="400">
+          <div class="desc">Marcelo plays as left back</div>
+        </div>
+    </body>
+</html>
