@@ -9,26 +9,29 @@ function validate(){
 
     if(mail == ""){
 		alert('E-mail is required !');
-		check= false;
+		return false;
 	}
 
 	if(password == ""){
 		alert('Password is required !');
-		check= false;
+		return false;
 	}
 
     if (!mail.match(/^[a-zA-z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){
 		alert("Email is Not Valid");
-		check=false;
+		return false;
 	}
-    if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=^*[A-Z])(?=.*[!@#$%^&*]).{8}$/)){
+    if (!password.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8,15}$/)){
 		alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least and start with upper case letter");
-		check=false;
+		return false;
 	}
-    if (check==true) {
-        alert("Thank you for being part of us!");
-    }
-    else{
-        return check;
-    }
+	var str = password;
+	if(!(str[0].toUpperCase() == str[0]))
+	{
+	   alert('First character Must be an upper case.');  
+	   return false;
+	}
+
+    alert("Welcom to your page!");
+	return true;
 }
