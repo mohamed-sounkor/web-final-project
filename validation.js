@@ -51,9 +51,15 @@ function validate(){
 		alert("Email is Not Valid");
 		return false;
 	}
-    if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=^*[A-Z])(?=.*[!@#$%^&*]).{8}$/)){
+    if (!password.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8,15}$/)){
 		alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least and start with upper case letter");
 		return false;
+	}
+	var str = password;
+	if(!(str[0].toUpperCase() == str[0]))
+	{
+	   alert('First character Must be an upper case.');  
+	   return false;
 	}
     if (!phone.match(/^[0-9]{11}$/)){
 
