@@ -51,7 +51,7 @@ function validate(){
 		alert("Email is Not Valid");
 		return false;
 	}
-    if (!password.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8,15}$/)){
+    if (!password.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8}$/)){
 		alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least and start with upper case letter");
 		return false;
 	}
